@@ -55,6 +55,13 @@ return [
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
             'throw' => false,
         ],
+        'carta_images' => [
+            'driver' => 'local',
+            'root' => public_path('uploads'), // Carpeta donde se guardarán las imágenes de las cartas
+            'url' => env('APP_URL').'/uploads', // URL pública para acceder a las imágenes de las cartas
+            'visibility' => 'public',
+        ],
+
 
     ],
 
