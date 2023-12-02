@@ -2,6 +2,8 @@
 @section('Create Card', 'Magical Proxy')
 
 @section ('content')
+
+
 <div class="container mt-4">
     <div class="mb-3">
         <div class="card-body">
@@ -15,23 +17,23 @@
                     <div class="col-md-8">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" class="form-control" name="name" id="name" maxlength="60" value="{{ old('name')}}">
+                            <input type="text" class="form-control" name="name" id="name" maxlength="60" required value="{{ old('name')}}">
                         </div>
                         <div class="form-group">
                             <label for="color">Color</label>
-                            <input type="text" class="form-control" name="color" id="color" maxlength="20" value="{{ old('color')}}">
+                            <input type="text" class="form-control" name="color" id="color" maxlength="20" required value="{{ old('color')}}">
                         </div>
                         <div class="form-group">
                             <label for="type">Type</label>
-                            <input type="text" class="form-control" name="type" id="type" maxlength="20" value="{{ old('type')}}">
+                            <input type="text" class="form-control" name="type" id="type" maxlength="20" required value="{{ old('type')}}">
                         </div>
                         <div class="form-group">
                             <label for="rarity">Rarity</label>
-                            <input type="text" class="form-control" name="rarity" id="rarity" maxlength="20" value="{{ old('rarity')}}">        
+                            <input type="text" class="form-control" name="rarity" id="rarity" maxlength="20" required value="{{ old('rarity')}}">        
                         </div>
                         <div class="form-group">
                             <label for="edition">Edition</label>
-                            <input type="text" class="form-control" name="edition" id="edition" maxlength="20" value="{{ old('edition')}}">        
+                            <input type="text" class="form-control" name="edition" id="edition" maxlength="20" required value="{{ old('edition')}}">        
                         </div>
                         <div class="form-group">
                             <label for="year">Year</label>

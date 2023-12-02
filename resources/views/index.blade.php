@@ -1,5 +1,7 @@
 @extends ('app.base')
 @section('title', 'Magical Proxy')
+@section('content')
+
       <div class="carousel-container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -9,13 +11,13 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="/TrabajoPuntuable/tiendaCartas/public/assets/img/front2.jpg" alt="First slide">
+              <img class="d-block w-100 h-100" src="/TrabajoPuntuable/tiendaCartas/public/assets/img/front2.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="/TrabajoPuntuable/tiendaCartas/public/assets/img/front1.jpg" alt="Second slide">
+              <img class="d-block w-100 h-100" src="/TrabajoPuntuable/tiendaCartas/public/assets/img/front1.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="/TrabajoPuntuable/tiendaCartas/public/assets/img/front3.jpg" alt="Third slide">
+              <img class="d-block w-100 h-100" src="/TrabajoPuntuable/tiendaCartas/public/assets/img/front3.jpg" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -29,3 +31,4 @@
         </div>
       </div>  
 
+@endsection

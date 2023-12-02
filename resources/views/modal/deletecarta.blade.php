@@ -14,7 +14,7 @@
     </form>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="submit" form="formDeleteV3" class="btn btn-primary">Delete movie</button>
+        <button type="submit" form="formDeleteV3" class="btn btn-primary">Delete card</button>
       </div>
     </div>
   </div>

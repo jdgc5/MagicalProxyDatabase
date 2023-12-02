@@ -24,5 +24,3 @@ Route::get('carta/view/{id}', [CartasController::class, 'view'])-> name ('carta.
 Route::get('setting', [SettingController::class, 'index'])-> name ('setting.index');
 Route::put('setting', [SettingController::class, 'update'])-> name ('setting.update');
 
-Route::post('carta/{cartum}/update-image', [CartasController::class, 'updateImage'])->name('carta.updateImage');
-Route::put('carta/{cartum}', [CartasController::class, 'update'])->name('carta.update');

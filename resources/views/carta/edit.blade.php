@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-md-4 mb-3">
             @if($carta->image)
-                <img src="{{ asset($carta->image) }}" class="img-fluid" alt="{{ $carta->name }}">
+                <img src="{{ asset('uploads/' . $carta->image) }}" class="img-fluid" alt="{{ $carta->name }}">
             @else
                 <img src="{{ asset('uploads/No_Picture.jpg') }}" class="img-fluid" alt="{{ $carta->name }}">
             @endif
@@ -32,19 +32,19 @@
                         </div>
                         <div class="form-group">
                             <label for="color" class="mb-1">Color</label>
-                            <input type="text" class="form-control" id="color" name="color" maxlength="20" value="{{ old('color', $carta->color)}}">
+                            <input type="text" class="form-control" id="color" name="color" maxlength="20" required value="{{ old('color', $carta->color)}}">
                         </div>
                         <div class="form-group">
                             <label for="type" class="mb-1">Type</label>
-                            <input type="text" class="form-control" id="type" name="type"  maxlength="20" value="{{ old('type', $carta->type)}}">
+                            <input type="text" class="form-control" id="type" name="type"  maxlength="20" required value="{{ old('type', $carta->type)}}">
                         </div>
                         <div class="form-group">
                             <label for="rarity" class="mb-1">Rarity</label>
-                            <input type="text" class="form-control" id="rarity" name="rarity"  maxlength="20" value="{{ old('rarity', $carta->rarity)}}">        
+                            <input type="text" class="form-control" id="rarity" name="rarity"  maxlength="20" required value="{{ old('rarity', $carta->rarity)}}">        
                         </div>
                         <div class="form-group">
                             <label for="edition" class="mb-1">Edition</label>
-                            <input type="text" class="form-control" id="edition" name="edition" maxlength="20" value="{{ old('edition', $carta->edition)}}">        
+                            <input type="text" class="form-control" id="edition" name="edition" maxlength="20" required value="{{ old('edition', $carta->edition)}}">        
                         </div>
                         <div class="form-group">
                             <label for="year" class="mb-1">Year</label>

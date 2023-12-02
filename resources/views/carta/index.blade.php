@@ -13,7 +13,7 @@
     <div class="col mb-4">
       <div class="card">
         @if($carta->image)
-          <img src="{{ asset($carta->image) }}" class="img-fluid img-size" alt="{{ $carta->name }}">
+          <img src="{{ asset('uploads/' . $carta->image) }}" class="img-fluid" alt="{{ $carta->name }}">
         @else
           <img src="{{ asset('uploads/No_Picture.jpg') }}" class="img-fluid img-size" alt="{{ $carta->name }}">
         @endif

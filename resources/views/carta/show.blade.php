@@ -6,7 +6,8 @@
     <div class="row">
         <div class="col-md-4 mb-3">
             @if($carta->image)
-                <img src="{{ asset($carta->image) }}" class="img-fluid" alt="{{ $carta->name }}">
+                <img src="{{ asset('uploads/' . $carta->image) }}" class="img-fluid" alt="{{ $carta->name }}">
+
             @else
                 <img src="{{ asset('uploads/No_Picture.jpg') }}" class="img-fluid" alt="{{ $carta->name }}">
             @endif
